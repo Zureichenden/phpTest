@@ -32,29 +32,7 @@
 
                     <th>
                         <a href="show.php?id=<?= $row[0]?>" class="btn btn-primary">Ver</a>
-                        <a href="edit.php?id=<?= $row[0]?>" class="btn btn-success">Modificar</a>
-                        <!-- Button trigger modal -->
-                        <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#id<?=$row[0]?>">Eliminar</a>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="id<?=$row[0]?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">¿Desea eliminar el registro?</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Una vez eliminado no se podra recuperar el registro
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
-                                    <a href="delete.php?id=<?= $row[0]?>" class="btn btn-danger">Eliminar</a>
-                                    <!-- <button type="button" >Eliminar</button> -->
-                                </div>
-                                </div>
-                            </div>
-                        </div>
+               
                     </th>
                 </tr>
             <?php endforeach; ?>

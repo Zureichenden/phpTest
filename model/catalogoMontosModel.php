@@ -42,6 +42,15 @@ class catalogoMontosModel
         $stament->bindParam(":id", $id);
         return ($stament->execute()) ? true : false;
     }
+
+    public function getMontosPlazos()
+    {
+        $sql = "SELECT id, monto, cantidad_plazos FROM catalogoMontos";
+        $stmt = $this->PDO->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }
 
 ?>

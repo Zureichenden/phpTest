@@ -38,6 +38,14 @@ class clienteModel
         $stament->bindParam(":id", $id);
         return ($stament->execute()) ? true : false;
     }
+    
+    public function getClientes()
+    {
+        $sql = "SELECT id, nombre FROM cliente";
+        $stmt = $this->PDO->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 
 ?>

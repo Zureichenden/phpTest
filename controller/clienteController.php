@@ -22,6 +22,13 @@
         public function delete($id){
             return ($this->model->delete($id)) ? header("Location:index.php") : header("Location:show.php?id=".$id) ;
         }
+
+        public function getClientes(){
+            return ($this->model->getClientes()) ? $this->model->getClientes() : false;
+        }
+
+   
+
     }
 
 ?>
