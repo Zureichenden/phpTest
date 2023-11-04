@@ -27,7 +27,7 @@
                         <a href="show.php?id=<?= $row[0]?>" class="btn btn-primary">Ver</a>
                         <a href="edit.php?id=<?= $row[0]?>" class="btn btn-success">Modificar</a>
                         <!-- Button trigger modal -->
-                        <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#id<?=$row[0]?>">Eliminar</a>
+                        <!-- <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#id<?=$row[0]?>">Eliminar</a> -->
 
                         <!-- Modal -->
                         <div class="modal fade" id="id<?=$row[0]?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -7,7 +7,7 @@
     <title>
         <?php
         echo (empty($_GET['id']))
-            ? ((strpos($_SERVER['REQUEST_URI'], 'create')) ? "Agregando nuevo cliente" : "Menú Principal")
+            ? ((strpos($_SERVER['REQUEST_URI'], 'create')) ? "Agregando nuevo" : "Menú Principal")
             : ((strpos($_SERVER['REQUEST_URI'], 'show')) ? "Detalles del registro " . $_GET['id'] : "Actualizar registro " . $_GET['id']);
         ?>
     </title>

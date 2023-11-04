@@ -27,6 +27,15 @@ class catalogoMontosModel
         return ($stament->execute()) ? $stament->fetchAll() : false;
     }
 
+    public function update($id, $monto, $cantidad_plazos)
+    {
+        $stament = $this->PDO->prepare("UPDATE catalogoMontos SET monto = :monto, cantidad_plazos = :cantidad_plazos WHERE id = :id");
+        $stament->bindParam(":monto", $monto);
+        $stament->bindParam(":cantidad_plazos", $cantidad_plazos);
+        $stament->bindParam(":id", $id);
+        return ($stament->execute()) ? $id : false;
+    }
+
     public function delete($id)
     {
         $stament = $this->PDO->prepare("DELETE FROM catalogomontos WHERE id = :id");
