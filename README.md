@@ -1,4 +1,5 @@
-Desarrollar un Sistema Web que permita realizar préstamos a clientes seleccionando monto y plazo (los plazos deben ser quincenales). El sistema debe contar con un reporte para mostrar la tabla de amortización del cliente.
+Desarrollar un Sistema Web que permita realizar préstamos a clientes seleccionando monto y plazo (los plazos deben ser quincenales). 
+El sistema debe contar con un reporte para mostrar la tabla de amortización del cliente.
 El sistema contará con las siguientes opciones:
 •	Catálogo de Clientes
 •	Catálogo de Montos (Monto y  plazo)
