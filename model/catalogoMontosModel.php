@@ -4,7 +4,7 @@ class catalogoMontosModel
     private $PDO;
     public function __construct()
     {
-        require_once("c://xampp/htdocs/proyecto/config/db.php");
+        require_once("c://xampp/htdocs/phpTest/config/db.php");
         $con = new db();
         $this->PDO = $con->conexion();
     }

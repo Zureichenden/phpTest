@@ -3,7 +3,7 @@
         private $model;
         public function __construct()
         {
-            require_once("c://xampp/htdocs/proyecto/model/catalogoMontosModel.php");
+            require_once("c://xampp/htdocs/phpTest/model/catalogoMontosModel.php");
             $this->model = new catalogoMontosModel();
         }
         public function guardar($monto, $cantidad_plazos){

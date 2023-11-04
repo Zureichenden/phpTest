@@ -1,13 +1,13 @@
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/head.php");
+    require_once("c://xampp/htdocs/phpTest/view/head/head.php");
 ?>
 
 
 
-<a href="/proyecto/view/cliente/create.php" class="btn btn-primary">Agregar nuevo cliente</a>
+<a href="/phpTest/view/cliente/create.php" class="btn btn-primary">Agregar nuevo cliente</a>
 
 
 
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/footer.php");
+    require_once("c://xampp/htdocs/phpTest/view/head/footer.php");
 ?>

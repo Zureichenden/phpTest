@@ -1,5 +1,5 @@
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/head.php");
+    require_once("c://xampp/htdocs/phpTest/view/head/head.php");
 ?>
 
 <form action="save.php" method="POST" autocomplete="off">
@@ -13,5 +13,5 @@
 </form>
 
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/footer.php");
+    require_once("c://xampp/htdocs/phpTest/view/head/footer.php");
 ?>

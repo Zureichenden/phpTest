@@ -1,6 +1,6 @@
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/head.php");
-    require_once("c://xampp/htdocs/proyecto/controller/clienteController.php");
+    require_once("c://xampp/htdocs/phpTest/view/head/head.php");
+    require_once("c://xampp/htdocs/phpTest/controller/clienteController.php");
     $obj = new clienteController();
     $user = $obj->show($_GET['id']);
 ?>
@@ -24,5 +24,5 @@
     </div>
   </form>
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/footer.php");
+    require_once("c://xampp/htdocs/phpTest/view/head/footer.php");
 ?>

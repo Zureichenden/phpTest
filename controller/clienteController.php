@@ -3,7 +3,7 @@
         private $model;
         public function __construct()
         {
-            require_once("c://xampp/htdocs/proyecto/model/clienteModel.php");
+            require_once("c://xampp/htdocs/phpTest/model/clienteModel.php");
             $this->model = new clienteModel();
         }
         public function guardar($nombre){
