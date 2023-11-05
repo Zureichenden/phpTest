@@ -1,3 +1,9 @@
+-- Crear la base de datos "prueba" si no existe
+CREATE DATABASE IF NOT EXISTS prueba;
+
+-- Usar la base de datos "prueba"
+USE prueba;
+
 -- Establecer el motor de almacenamiento InnoDB y conjunto de caracteres por defecto
 SET SQL_MODE = "";
 SET time_zone = "+00:00";
@@ -32,9 +38,10 @@ CREATE TABLE `amortizaciones` (
   `prestamo_id` INT,
   `quincena` INT,
   `fecha_pago` DATE,
-  `capital_pendiente` DECIMAL(10, 2),
-  `interes_pago` DECIMAL(10, 2),
   `monto_pago` DECIMAL(10, 2),
+  `interes_pago` DECIMAL(10, 2),
+  `abono` DECIMAL(10, 2),
+  `capital_pendiente` DECIMAL(10, 2),
   FOREIGN KEY (`prestamo_id`) REFERENCES `prestamos`(`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -50,5 +57,6 @@ INSERT INTO `catalogoMontos` (`monto`, `cantidad_plazos`) VALUES
 (200.00, 5),
 (100.00, 2);
 
+-- Insertar datos de prueba en la tabla de Préstamos
 INSERT INTO `prestamos` (`cliente_id`, `monto_id`, `fecha_inicio`, `interes`) 
 VALUES (1, 1, '2023-11-15', 5.00);
