@@ -1,4 +1,5 @@
 <?php
+    $pageTitle = "Listado de Plazos y Montos"; 
     require_once("c://xampp/htdocs/phpTest/view/head/head.php");
     require_once("c://xampp/htdocs/phpTest/controller/catalogoMontosController.php");
     $obj = new catalogoMontosController();

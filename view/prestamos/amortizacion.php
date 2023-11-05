@@ -1,4 +1,5 @@
 <?php
+    $pageTitle = "Amortizaciones del cliente"; 
     require_once("c://xampp/htdocs/phpTest/view/head/head.php");
     require_once("c://xampp/htdocs/phpTest/controller/prestamosController.php");
     $obj = new prestamosController();
@@ -10,6 +11,10 @@
     <a href="index.php" class="btn btn-primary">Regresar</a>
   
 </div>
+
+<!-- Agrega el botón "Generar PDF" -->
+<a href="generar_pdf.php?id=<?= $_GET['id'] ?>&rows=<?= urlencode(json_encode($rows)) ?>" class="btn btn-primary">Generar PDF</a>
+
 
 
 <table class="table table-striped table-bordered">

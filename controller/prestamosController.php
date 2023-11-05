@@ -98,7 +98,7 @@
         public function mostrarTablaAmortizacionByPrestamo($id)
         {
             // Llama al modelo para obtener la tabla de amortización del cliente
-            return ($this->model->mostrarTablaAmortizacionByPrestamo($id)) ?  $this->model->mostrarTablaAmortizacionByPrestamo($id) : header("Location:show.php?id=".$id) ;
+            return ($this->model->mostrarTablaAmortizacionByPrestamo($id)) ?  $this->model->mostrarTablaAmortizacionByPrestamo($id) : [];
 
         }
 

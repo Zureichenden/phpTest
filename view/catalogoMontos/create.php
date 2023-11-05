@@ -1,4 +1,5 @@
 <?php
+    $pageTitle = "Añadir Plazos y Montos"; 
     require_once("c://xampp/htdocs/phpTest/view/head/head.php");
 ?>
 

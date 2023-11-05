@@ -5,3 +5,5 @@ El sistema contará con las siguientes opciones:
 •	Catálogo de Montos (Monto y  plazo)
 •	Registro de Prestamos (Debe contar con filtro por Cliente)
 •	Tabla de Amortización (Esta debe ir en el registro de préstamos como botón de acción)
+
+Crear carpeta en htdocs llamada phpTest

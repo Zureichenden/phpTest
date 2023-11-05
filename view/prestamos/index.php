@@ -1,4 +1,5 @@
 <?php
+$pageTitle = "Listado de Préstamos"; 
 require_once("c://xampp/htdocs/phpTest/view/head/head.php");
 require_once("c://xampp/htdocs/phpTest/controller/prestamosController.php");
 ?>
@@ -8,7 +9,6 @@ require_once("c://xampp/htdocs/phpTest/controller/prestamosController.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Préstamos</title>
     <link rel="stylesheet" href="/phpTest/view/prestamos/css/index.css">
 </head>
 <body>
@@ -36,7 +36,7 @@ if ($searchTerm) {
             </form>
         </div>
         <div class="col-md-6 text-end">
-            <a href="/phpTest/view/prestamos/create.php" class="btn btn-primary">Agregar nuevo Préstamo</a>
+            <a href="/phpTest/view/prestamos/create.php" class="btn btn-success">Agregar nuevo Préstamo</a>
         </div>
     </div>
     

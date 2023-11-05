@@ -1,9 +1,7 @@
 <?php
+    $pageTitle = "Detalles de Préstamos"; 
     require_once("c://xampp/htdocs/phpTest/view/head/head.php");
     require_once("c://xampp/htdocs/phpTest/controller/prestamosController.php");
-
-
-
     $obj = new prestamosController();
     $prestamo = $obj->show($_GET['id']);
 ?>
