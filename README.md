@@ -7,3 +7,4 @@ El sistema contará con las siguientes opciones:
 •	Tabla de Amortización (Esta debe ir en el registro de préstamos como botón de acción)
 
 Crear carpeta en htdocs llamada phpTest
+Ejecutar script.sql
