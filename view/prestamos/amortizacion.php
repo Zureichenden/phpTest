@@ -23,16 +23,24 @@
             <th scope="col">ID Préstamo</th>
             <th scope="col">ID Amortización</th>
             <th scope="col">NO. Pago</th>
-            <th scope="col">Fecha </th>
+            <th scope="col">Fecha</th>
             <th scope="col">Préstamo</th>
             <th scope="col">Interés</th>
             <th scope="col">Abono</th>
-
         </tr>
     </thead>
     <tbody>
-        <?php if($rows): ?>
-            <?php foreach($rows as $row): ?>
+        <?php
+        if ($rows) {
+            $totalPrestamo = 0;
+            $totalInteres = 0;
+            $totalAbono = 0;
+
+            foreach ($rows as $row) {
+                $totalPrestamo += $row['monto_pago'];
+                $totalInteres += $row['interes'];
+                $totalAbono += $row['abono'];
+                ?>
                 <tr>
                     <th><?= $row['prestamo_id'] ?></th>
                     <th><?= $row['amortizacion_id'] ?></th>
@@ -42,14 +50,30 @@
                     <th><?= '$' . number_format($row['interes'], 2) ?></th>
                     <th><?= '$' . number_format($row['abono'], 2) ?></th>
                 </tr>
-            <?php endforeach; ?>
-        <?php else: ?>
+                <?php
+            }
+            ?>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Total Préstamo: $<?= number_format($totalPrestamo, 2) ?></th>
+                <th>Total Interés: $<?= number_format($totalInteres, 2) ?></th>
+                <th>Total Abono: $<?= number_format($totalAbono, 2) ?></th>
+            </tr>
+            <?php
+        } else {
+            ?>
             <tr>
                 <td colspan="7" class="text-center">No hay registros que coincidan con la búsqueda.</td>
             </tr>
-        <?php endif; ?>
+            <?php
+        }
+        ?>
     </tbody>
 </table>
+
 <?php
     require_once("c://xampp/htdocs/phpTest/view/head/footer.php");
 ?>

@@ -77,7 +77,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="/phpTest/view/cliente/index.php">Ver Lista</a>
+                                    <a class="dropdown-item" href="/phpTest/view/amortizaciones/index.php">Ver Lista</a>
                                 </li>
                             </ul>
                         </li>
